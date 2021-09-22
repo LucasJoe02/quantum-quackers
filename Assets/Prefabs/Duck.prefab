@@ -61,7 +61,7 @@ Transform:
   m_GameObject: {fileID: 3854931933311170443}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0.19318435, y: 0.138133, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalScale: {x: 10, y: 10, z: 1}
   m_Children:
   - {fileID: 3854931932885296024}
   m_Father: {fileID: 0}
@@ -131,7 +131,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controller: {fileID: 3854931933311170453}
-  moveSpeed: 10
+  moveSpeed: 20
 --- !u!114 &3854931933311170453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e64301e9149c8b48810bdf17a64d499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_JumpForce: 140
+  m_JumpForce: 200
   m_AirSpeed: 0.451
   m_MovementSmoothing: 0.05
   m_AirControl: 1

@@ -1,0 +1,5 @@
+22/09
+spliced tile sheet 
+split screen/camera movement 
+basic level layout 
+switch mechanic(in progress)
