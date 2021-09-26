@@ -2,10 +2,10 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerCamera : MonoBehaviour
+public class CameraSwitch : MonoBehaviour
 {
-    public Vector3 offset = new Vector3();
-    public GameObject Player;
+    public Camera cam1;
+    public float offset = 0.5f;
 
     // Start is called before the first frame update
     private void Start()
@@ -15,6 +15,9 @@ public class PlayerCamera : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
-        transform.position = Player.transform.position + offset;
+        if (Input.GetKeyDown("space"))
+        {
+            cam1.rect = new Rect(0, offset, 1, 0.5f);
+        }
     }
 }

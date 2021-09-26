@@ -1,10 +1,12 @@
 using UnityEngine;
 using UnityEngine.Events;
+using TMPro;
 
 public class CharacterController2D : MonoBehaviour
 {
     public GameObject duck;
     public GameObject duck_2;
+    public TextMeshProUGUI moneyTextUi;
 
     [SerializeField] private float m_JumpForce = 400f;                          // Amount of force added when the player jumps.
     [Range(0, 1)] [SerializeField] private float m_AirSpeed = .36f;
@@ -109,9 +111,26 @@ public class CharacterController2D : MonoBehaviour
 
     private void Switch()
     {
+        // Position Switch of the ducks
         if (Input.GetKeyDown("space"))
         {
             duck.transform.position = duck_2.transform.position;
+        }
+    }
+
+    /*
+     * currently in testing
+     * not functionuing at the moment
+     */
+
+    private void Grape(Collider2D collider)
+    {
+        // Grape collection for switching
+        int grape = 0;
+        if (collider.gameObject.tag == "grape")
+        {
+            grape++;
+            Destroy(collider.gameObject);
         }
     }
 }
