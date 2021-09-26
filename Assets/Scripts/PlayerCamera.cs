@@ -19,7 +19,7 @@ public class PlayerCamera : MonoBehaviour
         transform.position = Player.transform.position + offset;
         if (Input.GetKeyDown("space"))
         {
-            Player.
+
         }
     }
 }
