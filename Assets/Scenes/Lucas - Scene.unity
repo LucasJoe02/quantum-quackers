@@ -679,31 +679,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 3854931933311170440, guid: 37a580a2699dd5940bdf76469351a543,
-        type: 3}
-      propertyPath: m_Sprite
-      value: 
-      objectReference: {fileID: -4676612374827290972, guid: e41c481320d2cd94cbbb6a4fa801bd32,
-        type: 3}
-    - target: {fileID: 3854931933311170440, guid: 37a580a2699dd5940bdf76469351a543,
-        type: 3}
-      propertyPath: m_Materials.Array.data[0]
-      value: 
-      objectReference: {fileID: 2100000, guid: 0bd3a37758557b94584148f047874ef6, type: 2}
     - target: {fileID: 3854931933311170441, guid: 37a580a2699dd5940bdf76469351a543,
         type: 3}
       propertyPath: m_RootOrder
       value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 3854931933311170441, guid: 37a580a2699dd5940bdf76469351a543,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 10
-      objectReference: {fileID: 0}
-    - target: {fileID: 3854931933311170441, guid: 37a580a2699dd5940bdf76469351a543,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 10
       objectReference: {fileID: 0}
     - target: {fileID: 3854931933311170441, guid: 37a580a2699dd5940bdf76469351a543,
         type: 3}
@@ -759,26 +738,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_Name
       value: Duck
-      objectReference: {fileID: 0}
-    - target: {fileID: 3854931933311170450, guid: 37a580a2699dd5940bdf76469351a543,
-        type: 3}
-      propertyPath: ChargeLevel
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 3854931933311170454, guid: 37a580a2699dd5940bdf76469351a543,
-        type: 3}
-      propertyPath: m_Size.x
-      value: 0.119030885
-      objectReference: {fileID: 0}
-    - target: {fileID: 3854931933311170454, guid: 37a580a2699dd5940bdf76469351a543,
-        type: 3}
-      propertyPath: m_Size.y
-      value: 0.1490248
-      objectReference: {fileID: 0}
-    - target: {fileID: 3854931933311170454, guid: 37a580a2699dd5940bdf76469351a543,
-        type: 3}
-      propertyPath: m_Offset.y
-      value: -0.005925679
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
