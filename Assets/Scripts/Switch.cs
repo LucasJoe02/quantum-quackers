@@ -4,8 +4,9 @@ using UnityEngine;
 
 public class Switch : MonoBehaviour
 {
-    public GameObject duck_1, duck_2, test;
+    public GameObject duck_1, duck_2, test, sprite;
     public CharacterController2D move;
+    public int count;
 
     // Start is called before the first frame update
     private void Start()
@@ -24,9 +25,17 @@ public class Switch : MonoBehaviour
 
         if (Input.GetKeyDown("space"))
         {
+            sprite.SetActive(true);
             test.transform.position = duck_1.transform.position;
             duck_1.transform.position = duck_2.transform.position;
             duck_2.transform.position = test.transform.position;
+            StartCoroutine(Example());
         }
+    }
+
+    private IEnumerator Example()
+    {
+        yield return new WaitForSeconds(0.1f);
+        sprite.SetActive(false);
     }
 }
