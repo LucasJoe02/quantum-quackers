@@ -4,10 +4,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
-    [Range(0, 3)]
-    public int ChargeLevel;
-
     public CharacterController2D Controller;
 
     public float moveSpeed = 40f;
