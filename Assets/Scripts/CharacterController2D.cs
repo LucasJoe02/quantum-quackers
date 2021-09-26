@@ -1,5 +1,6 @@
 using UnityEngine;
 using UnityEngine.Events;
+using System.Collections;
 using TMPro;
 
 public class CharacterController2D : MonoBehaviour
@@ -7,6 +8,8 @@ public class CharacterController2D : MonoBehaviour
     public GameObject duck;
     public GameObject duck_2;
     public TextMeshProUGUI moneyTextUi;
+    private int switching;
+    //private IEnumerator delay;
 
     [SerializeField] private float m_JumpForce = 400f;                          // Amount of force added when the player jumps.
     [Range(0, 1)] [SerializeField] private float m_AirSpeed = .36f;
@@ -38,6 +41,10 @@ public class CharacterController2D : MonoBehaviour
 
     private void Update()
     {
+        while (switching == 1)
+        {
+            move = 0;
+        }
         bool wasGrounded = m_Grounded;
         m_Grounded = false;
 
@@ -109,13 +116,20 @@ public class CharacterController2D : MonoBehaviour
         transform.localScale = theScale;
     }
 
-    private void Switch()
+    public void Switch()
     {
+        switching = 0;
         // Position Switch of the ducks
         if (Input.GetKeyDown("space"))
         {
             duck.transform.position = duck_2.transform.position;
+            Delay();
         }
+    }
+
+    private IEnumerator Delay()
+    {
+        yield return new WaitForSeconds(1f);
     }
 
     /*

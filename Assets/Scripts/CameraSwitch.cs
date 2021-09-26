@@ -4,8 +4,8 @@ using UnityEngine;
 
 public class CameraSwitch : MonoBehaviour
 {
-    public Camera cam1;
-    public float offset = 0.5f;
+    public GameObject cam1, cam2, cam3, cam4;
+    private bool maybe = false;
 
     // Start is called before the first frame update
     private void Start()
@@ -17,7 +17,17 @@ public class CameraSwitch : MonoBehaviour
     {
         if (Input.GetKeyDown("space"))
         {
-            cam1.rect = new Rect(0, offset, 1, 0.5f);
+            cam1.SetActive(maybe);
+            cam2.SetActive(maybe);
+
+            if (maybe == true)
+            {
+                maybe = false;
+            }
+            else
+            {
+                maybe = true;
+            }
         }
     }
 }
