@@ -5,6 +5,7 @@ using UnityEngine;
 public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D Controller;
+    public Switch switching;
 
     public float moveSpeed = 40f;
 
@@ -24,8 +25,8 @@ public class PlayerMovement : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Controller.Switch();
         // Movement
+
         Controller.Move(horizontalMove * Time.fixedDeltaTime, jump);
         jump = false;
     }

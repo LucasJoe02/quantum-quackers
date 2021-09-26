@@ -19,6 +19,8 @@ public class CameraSwitch : MonoBehaviour
         {
             cam1.SetActive(maybe);
             cam2.SetActive(maybe);
+            cam3.SetActive(!maybe);
+            cam4.SetActive(!maybe);
 
             if (maybe == true)
             {
