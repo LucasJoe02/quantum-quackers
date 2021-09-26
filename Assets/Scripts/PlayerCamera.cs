@@ -16,5 +16,8 @@ public class PlayerCamera : MonoBehaviour
     private void Update()
     {
         transform.position = Player.transform.position + offset;
+        if (Input.GetKeyDown("space"))
+        {
+        }
     }
 }
