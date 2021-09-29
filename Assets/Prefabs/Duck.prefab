@@ -45,6 +45,7 @@ GameObject:
   - component: {fileID: 3854931933311170452}
   - component: {fileID: 3854931933311170454}
   - component: {fileID: 969130752}
+  - component: {fileID: 1355085943}
   m_Layer: 8
   m_Name: Duck
   m_TagString: Untagged
@@ -106,7 +107,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: -4676612374827290972, guid: e41c481320d2cd94cbbb6a4fa801bd32,
+  m_Sprite: {fileID: 6382171380578354898, guid: 0d52c55619cdb5c459265ea6ef24da24,
     type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -131,6 +132,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   Controller: {fileID: 3854931933311170453}
+  animator: {fileID: 1355085943}
+  switching: {fileID: 0}
   moveSpeed: 20
 --- !u!114 &3854931933311170453
 MonoBehaviour:
@@ -144,8 +147,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5e64301e9149c8b48810bdf17a64d499, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duck: {fileID: 0}
-  duck_2: {fileID: 0}
   moneyTextUi: {fileID: 0}
   m_JumpForce: 200
   m_AirSpeed: 0.451
@@ -157,7 +158,18 @@ MonoBehaviour:
   m_GroundCheck: {fileID: 3854931932885296024}
   OnLandEvent:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 3854931933311170450}
+        m_MethodName: OnLanding
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!50 &3854931933311170452
 Rigidbody2D:
   serializedVersion: 4
@@ -192,8 +204,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0, y: -0.0013662697}
-  m_Size: {x: 0.119030885, y: 0.13990597}
+  m_Offset: {x: 0, y: -0.00418458}
+  m_Size: {x: 0.119030885, y: 0.1455426}
   m_Direction: 0
 --- !u!114 &969130752
 MonoBehaviour:
@@ -209,3 +221,22 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   chargeLevel: 0
   intensity: -2.84
+--- !u!95 &1355085943
+Animator:
+  serializedVersion: 3
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3854931933311170443}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: a5db42d63ed91ec489683fb710033082, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorControllerStateOnDisable: 0
