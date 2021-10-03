@@ -21,7 +21,7 @@ public class CameraSwitch : MonoBehaviour
 
     public void Camera()
     {
-        if ((charge.chargeLevel >= 1 || charge2.chargeLevel >= 1) && Input.GetKeyDown("space"))
+        if ((charge.chargeLevel > 0 || charge2.chargeLevel > 0) && Input.GetKeyDown("space"))
         {
             cam1.SetActive(maybe);
             cam2.SetActive(maybe);

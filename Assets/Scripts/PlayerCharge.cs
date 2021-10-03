@@ -5,15 +5,12 @@ using TMPro;
 
 public class PlayerCharge : MonoBehaviour
 {
-    public Collider2D tilemapCollider;
+    public Collider2D gate1, gate2, gate3;
     public GameObject duck_1, duck_2, test, sprite;
-
-    private CameraSwitch cams;
-
-    public bool isActive = false;
 
     [Range(0, 3)]
     public int chargeLevel;
+
     public TextMeshProUGUI chargeTextUI;
 
     private Material material;
@@ -76,9 +73,29 @@ public class PlayerCharge : MonoBehaviour
     /// </summary>
     public void Gates()
     {
-        if (chargeLevel == 1)
+        if (chargeLevel == 1 && duck_1)
         {
-            tilemapCollider.enabled = false;
+            gate1.enabled = false;
+        }
+        else
+        {
+            gate1.enabled = true;
+        }
+        if (chargeLevel == 2 && duck_1)
+        {
+            gate2.enabled = false;
+        }
+        else
+        {
+            gate2.enabled = true;
+        }
+        if (chargeLevel == 3 && duck_1)
+        {
+            gate3.enabled = false;
+        }
+        else
+        {
+            gate3.enabled = true;
         }
     }
 
@@ -102,10 +119,20 @@ public class PlayerCharge : MonoBehaviour
     /// </summary>
     private void ChargeReduction()
     {
-        if (Input.GetKeyDown("space") && chargeLevel >= 1)
+        if (Input.GetKeyDown("space") && chargeLevel == 1)
         {
             chargeLevel--;
-            tilemapCollider.enabled = true;
+            gate1.enabled = true;
+        }
+        if (Input.GetKeyDown("space") && chargeLevel == 2)
+        {
+            chargeLevel--;
+            gate2.enabled = true;
+        }
+        if (Input.GetKeyDown("space") && chargeLevel == 3)
+        {
+            chargeLevel--;
+            gate3.enabled = true;
         }
     }
 
