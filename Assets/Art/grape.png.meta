@@ -1,13 +1,13 @@
 fileFormatVersion: 2
-guid: 1cbacdfadf3495447a947d7f4c20a0cd
+guid: f4a68367d3814944aa8b5a89f8eed499
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -4431494890709657585
-    second: bread_0
+      213: -2998275146054922168
+    second: grape_0
   - first:
-      213: -6343660546593796014
-    second: bread_1
+      213: -1989416704094299340
+    second: grape_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: bread_0
+      name: grape_0
       rect:
         serializedVersion: 2
-        x: 2
-        y: 17
-        width: 12
-        height: 14
+        x: 6
+        y: 22
+        width: 4
+        height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f08da4f30ea2082c0800000000000000
-      internalID: -4431494890709657585
+      spriteID: 8409384e3acf366d0800000000000000
+      internalID: -2998275146054922168
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: bread_1
+      name: grape_1
       rect:
         serializedVersion: 2
-        x: 2
-        y: 2
-        width: 12
-        height: 14
+        x: 6
+        y: 7
+        width: 4
+        height: 4
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,8 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 250dd90d75ac6f7a0800000000000000
-      internalID: -6343660546593796014
+      spriteID: 43b1b3a4c0c2464e0800000000000000
+      internalID: -1989416704094299340
       vertices: []
       indices: 
       edges: []

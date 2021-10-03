@@ -106,20 +106,4 @@ public class CharacterController2D : MonoBehaviour
         theScale.x *= -1;
         transform.localScale = theScale;
     }
-
-    /*
-     * currently in testing
-     * not functionuing at the moment
-     */
-
-    private void Grape(Collider2D collider)
-    {
-        // Grape collection for switching
-        int grape = 0;
-        if (collider.gameObject.tag == "grape")
-        {
-            grape++;
-            Destroy(collider.gameObject);
-        }
-    }
 }
