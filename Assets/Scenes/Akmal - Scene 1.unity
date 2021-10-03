@@ -1668,6 +1668,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 373065094}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &220247934 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543,
+    type: 3}
+  m_PrefabInstance: {fileID: 373065094}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 220247932}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94681b7f8518a2498275a94c8e86464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &229390497
 GameObject:
   m_ObjectHideFlags: 0
@@ -2016,6 +2028,8 @@ MonoBehaviour:
   cam2: {fileID: 56027554}
   cam3: {fileID: 978585010}
   cam4: {fileID: 288335876}
+  charge: {fileID: 220247934}
+  charge2: {fileID: 1707333930}
 --- !u!1 &535500114
 GameObject:
   m_ObjectHideFlags: 0
@@ -2268,6 +2282,10 @@ PrefabInstance:
       propertyPath: sprite
       value: 
       objectReference: {fileID: 535500114}
+    - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
+      propertyPath: chargeLevel
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
       propertyPath: tilemapCollider
       value: 
@@ -2941,3 +2959,15 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 984710261}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1707333930 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543,
+    type: 3}
+  m_PrefabInstance: {fileID: 984710261}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1707333928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94681b7f8518a2498275a94c8e86464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

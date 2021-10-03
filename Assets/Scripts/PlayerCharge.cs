@@ -1,16 +1,20 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using TMPro;
 
 public class PlayerCharge : MonoBehaviour
 {
     public Collider2D tilemapCollider;
     public GameObject duck_1, duck_2, test, sprite;
 
+    private CameraSwitch cams;
+
     public bool isActive = false;
 
     [Range(0, 3)]
     public int chargeLevel;
+    public TextMeshProUGUI chargeTextUI;
 
     private Material material;
 
@@ -19,6 +23,7 @@ public class PlayerCharge : MonoBehaviour
 
     private void Start()
     {
+        chargeTextUI.text = "0";
         material = GetComponent<SpriteRenderer>().material;
     }
 
@@ -29,6 +34,7 @@ public class PlayerCharge : MonoBehaviour
         Gates();
         Switching();
         ChargeReduction();
+        UpdateChargeText();
     }
 
     public void ChangeGlow(int chargeLevel)
@@ -119,6 +125,15 @@ public class PlayerCharge : MonoBehaviour
             duck_2.transform.position = test.transform.position;
             StartCoroutine(Example());
         }
+    }
+
+    /// <summary>
+    /// Updates the charge text of the ducks
+    /// so the UI displays the correct charge level
+    /// </summary>
+    public void UpdateChargeText()
+    {
+        chargeTextUI.text = chargeLevel.ToString();
     }
 
     /// <summary>
