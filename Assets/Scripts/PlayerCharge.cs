@@ -7,6 +7,8 @@ public class PlayerCharge : MonoBehaviour
     public Collider2D tilemapCollider;
     public GameObject duck_1, duck_2, test, sprite;
 
+    private CameraSwitch cams;
+
     public bool isActive = false;
 
     [Range(0, 3)]
