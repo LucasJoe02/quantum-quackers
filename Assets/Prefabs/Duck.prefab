@@ -190,7 +190,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Controller: {fileID: 3854931933311170453}
   animator: {fileID: 1355085943}
-  switching: {fileID: 0}
   moveSpeed: 20
 --- !u!114 &3854931933311170453
 MonoBehaviour:
@@ -246,6 +245,7 @@ MonoBehaviour:
   sprite: {fileID: 0}
   isActive: 0
   chargeLevel: 0
+  chargeTextUI: {fileID: 0}
   intensity: -2.84
 --- !u!114 &1707333929
 MonoBehaviour:
