@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - grape
+  - Gate
+  - Death
+  - Bread
   layers:
   - Default
   - TransparentFX

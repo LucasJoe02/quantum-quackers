@@ -28,7 +28,6 @@ public class PlayerCharge : MonoBehaviour
     private void Update()
     {
         ChangeGlow(chargeLevel);
-        Gates();
         Switching();
         ChargeReduction();
         UpdateChargeText();
@@ -69,47 +68,39 @@ public class PlayerCharge : MonoBehaviour
     }
 
     /// <summary>
-    /// sets the gates to false for phasing to occur
-    /// </summary>
-    public void Gates()
-    {
-        if (chargeLevel == 1 && duck_1)
-        {
-            gate1.enabled = false;
-        }
-        else
-        {
-            gate1.enabled = true;
-        }
-        if (chargeLevel == 2 && duck_1)
-        {
-            gate2.enabled = false;
-        }
-        else
-        {
-            gate2.enabled = true;
-        }
-        if (chargeLevel == 3 && duck_1)
-        {
-            gate3.enabled = false;
-        }
-        else
-        {
-            gate3.enabled = true;
-        }
-    }
-
-    /// <summary>
     /// Detects "grapes" tag when hitting a collider
     /// increases charge level when detected
     /// </summary>
     /// <param name="collision"></param>
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (collision.gameObject.tag == "Bread")
+        {
+            /// for win condition
+            Destroy(collision.gameObject);
+        }
         if (collision.gameObject.tag == "grape")
         {
             chargeLevel++;
             Destroy(collision.gameObject);
+        }
+
+        if (chargeLevel == 1 && collision.gameObject.tag == "Gate")
+        {
+            gate1.enabled = false;
+        }
+        if (chargeLevel == 2 && collision.gameObject.tag == "Gate")
+        {
+            gate2.enabled = false;
+        }
+        if (chargeLevel == 3 && collision.gameObject.tag == "Gate")
+        {
+            gate3.enabled = false;
+        }
+        /// for fail condition
+        if (collision.gameObject.tag == "Death")
+        {
+            Destroy(gameObject);
         }
     }
 
