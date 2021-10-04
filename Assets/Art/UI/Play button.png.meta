@@ -1,25 +1,16 @@
 fileFormatVersion: 2
-guid: e8779e9f096323840ae0bb5fcbe52331
+guid: f93657bbff1147040829ea2d6f33911f
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4904209785577346459
-    second: Duck2 walk_0
+      213: 5222927119181187728
+    second: Play button_0
   - first:
-      213: 5318737856418530147
-    second: Duck2 walk_1
+      213: 1095864752855536795
+    second: Play button_1
   - first:
-      213: -4323395753879449906
-    second: Duck2 walk_2
-  - first:
-      213: -4794600593367459590
-    second: Duck2 walk_3
-  - first:
-      213: 2717484256958617172
-    second: Duck2 walk_4
-  - first:
-      213: 5667363648639592911
-    second: Duck2 walk_5
+      213: -1510142930931179524
+    second: Play button_2
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -105,13 +96,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Duck2 walk_0
+      name: Play button_0
       rect:
         serializedVersion: 2
-        x: 8
-        y: 72
-        width: 16
-        height: 15
+        x: 80
+        y: 445
+        width: 160
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -119,20 +110,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b95155df0d04f0440800000000000000
-      internalID: 4904209785577346459
+      spriteID: 09a8c8aea809b7840800000000000000
+      internalID: 5222927119181187728
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Duck2 walk_1
+      name: Play button_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 72
-        width: 16
-        height: 15
+        x: 400
+        y: 445
+        width: 160
+        height: 80
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -140,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 363cf3986e3ffc940800000000000000
-      internalID: 5318737856418530147
+      spriteID: b9453d3cf2b453f00800000000000000
+      internalID: 1095864752855536795
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Duck2 walk_2
+      name: Play button_2
       rect:
         serializedVersion: 2
-        x: 8
-        y: 40
-        width: 16
-        height: 16
+        x: 80
+        y: 125
+        width: 160
+        height: 75
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -161,71 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ece459ad7763004c0800000000000000
-      internalID: -4323395753879449906
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Duck2 walk_3
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 40
-        width: 16
-        height: 16
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af89478c928267db0800000000000000
-      internalID: -4794600593367459590
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Duck2 walk_4
-      rect:
-        serializedVersion: 2
-        x: 8
-        y: 8
-        width: 16
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 4561cbaa88176b520800000000000000
-      internalID: 2717484256958617172
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Duck2 walk_5
-      rect:
-        serializedVersion: 2
-        x: 40
-        y: 8
-        width: 16
-        height: 14
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc9ef12263586ae40800000000000000
-      internalID: 5667363648639592911
+      spriteID: cff97c16105ea0be0800000000000000
+      internalID: -1510142930931179524
       vertices: []
       indices: 
       edges: []
