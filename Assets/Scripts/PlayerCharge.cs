@@ -6,7 +6,7 @@ using TMPro;
 public class PlayerCharge : MonoBehaviour
 {
     public Collider2D gate1, gate2, gate3;
-    public GameObject duck_1, duck_2, test, sprite;
+    public GameObject duck_1, duck_2, test, sprite, canvas;
 
     [Range(0, 3)]
     public int chargeLevel;
@@ -27,6 +27,7 @@ public class PlayerCharge : MonoBehaviour
     // Update is called once per frame
     private void Update()
     {
+        IsDead();
         ChangeGlow(chargeLevel);
         Switching();
         ChargeReduction();
@@ -162,5 +163,13 @@ public class PlayerCharge : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         sprite.SetActive(false);
+    }
+
+    private void IsDead()
+    {
+        if (duck_1 == null || duck_2 == null)
+        {
+            canvas.SetActive(true);
+        }
     }
 }
