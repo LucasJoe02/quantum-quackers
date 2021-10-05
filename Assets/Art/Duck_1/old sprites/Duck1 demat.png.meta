@@ -1,25 +1,34 @@
 fileFormatVersion: 2
-guid: 8c95459d2a8426644b677aff1c594672
+guid: 4e819c9b7a39f2146b92dd56a0823c8b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4904209785577346459
-    second: Duck2 walk_0
+      213: 7313837461353904190
+    second: Duck1 demat_0
   - first:
-      213: 5318737856418530147
-    second: Duck2 walk_1
+      213: -5615382775197197411
+    second: Duck1 demat_1
   - first:
-      213: -4323395753879449906
-    second: Duck2 walk_2
+      213: -8569280677268978103
+    second: Duck1 demat_2
   - first:
-      213: -4794600593367459590
-    second: Duck2 walk_3
+      213: 2488934999277767832
+    second: Duck1 demat_3
   - first:
-      213: 2717484256958617172
-    second: Duck2 walk_4
+      213: -2949899624154441585
+    second: Duck1 demat_4
   - first:
-      213: 5667363648639592911
-    second: Duck2 walk_5
+      213: 4504077129598049637
+    second: Duck1 demat_5
+  - first:
+      213: -3711469955414625742
+    second: Duck1 demat_6
+  - first:
+      213: 5505850445860391016
+    second: Duck1 demat_7
+  - first:
+      213: -5252084998257792857
+    second: Duck1 demat_8
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -50,8 +59,8 @@ TextureImporter:
   textureSettings:
     serializedVersion: 2
     filterMode: 0
-    aniso: -1
-    mipBias: -100
+    aniso: 1
+    mipBias: 0
     wrapU: 1
     wrapV: 1
     wrapW: 1
@@ -101,41 +110,17 @@ TextureImporter:
     overridden: 0
     androidETC2FallbackOverride: 0
     forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: iPhone
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: Android
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Duck2 walk_0
+      name: Duck1 demat_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 640
-        width: 320
-        height: 320
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -143,20 +128,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b95155df0d04f0440800000000000000
-      internalID: 4904209785577346459
+      spriteID: e38b1f4bb68ff7560800000000000000
+      internalID: 7313837461353904190
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Duck2 walk_1
+      name: Duck1 demat_1
       rect:
         serializedVersion: 2
-        x: 320
-        y: 640
-        width: 320
-        height: 320
+        x: 32
+        y: 64
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -164,20 +149,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 363cf3986e3ffc940800000000000000
-      internalID: 5318737856418530147
+      spriteID: d9b16861e172212b0800000000000000
+      internalID: -5615382775197197411
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Duck2 walk_2
+      name: Duck1 demat_2
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94683c240acc31980800000000000000
+      internalID: -8569280677268978103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck1 demat_3
       rect:
         serializedVersion: 2
         x: 0
-        y: 320
-        width: 320
-        height: 320
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -185,20 +191,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ece459ad7763004c0800000000000000
-      internalID: -4323395753879449906
+      spriteID: 89c0df4e1397a8220800000000000000
+      internalID: 2488934999277767832
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Duck2 walk_3
+      name: Duck1 demat_4
       rect:
         serializedVersion: 2
-        x: 320
-        y: 320
-        width: 320
-        height: 320
+        x: 32
+        y: 32
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -206,20 +212,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: af89478c928267db0800000000000000
-      internalID: -4794600593367459590
+      spriteID: f88573bcbe9df07d0800000000000000
+      internalID: -2949899624154441585
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Duck2 walk_4
+      name: Duck1 demat_5
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56d17a62942b18e30800000000000000
+      internalID: 4504077129598049637
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck1 demat_6
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 320
-        height: 320
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -227,20 +254,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4561cbaa88176b520800000000000000
-      internalID: 2717484256958617172
+      spriteID: 232f9f06db53e7cc0800000000000000
+      internalID: -3711469955414625742
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Duck2 walk_5
+      name: Duck1 demat_7
       rect:
         serializedVersion: 2
-        x: 320
+        x: 32
         y: 0
-        width: 320
-        height: 320
+        width: 32
+        height: 32
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -248,8 +275,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: fc9ef12263586ae40800000000000000
-      internalID: 5667363648639592911
+      spriteID: 8684feb2fc5b86c40800000000000000
+      internalID: 5505850445860391016
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Duck1 demat_8
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a8afa45588dc17b0800000000000000
+      internalID: -5252084998257792857
       vertices: []
       indices: 
       edges: []
