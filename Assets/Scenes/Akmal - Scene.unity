@@ -3648,11 +3648,11 @@ PrefabInstance:
     - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
       propertyPath: duck_1
       value: 
-      objectReference: {fileID: 1707333928}
+      objectReference: {fileID: 220247932}
     - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
       propertyPath: duck_2
       value: 
-      objectReference: {fileID: 220247932}
+      objectReference: {fileID: 1707333928}
     - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
       propertyPath: sprite
       value: 
@@ -5809,6 +5809,7 @@ GameObject:
   - component: {fileID: 1287502147}
   - component: {fileID: 1287502149}
   - component: {fileID: 1287502148}
+  - component: {fileID: 1287502150}
   m_Layer: 0
   m_Name: Gates 1
   m_TagString: Gate
@@ -6160,6 +6161,18 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.160449, y: 3.0723057}
   m_EdgeRadius: 0
+--- !u!114 &1287502150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1287502143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4d66b2cebd6df414083ade6520ea29e8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1298572388 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4278211750755064142, guid: daac95031a0f160498b3db811d782bc5,

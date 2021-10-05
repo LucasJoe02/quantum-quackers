@@ -86,10 +86,10 @@ public class PlayerCharge : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
-        if (chargeLevel == 1 && collision.gameObject.tag == "Gate")
+        /*if (chargeLevel == 1 && collision.gameObject.tag == "Gate")
         {
             gate1.enabled = false;
-        }
+        }*/
         if (chargeLevel == 2 && collision.gameObject.tag == "Gate")
         {
             gate2.enabled = false;
@@ -165,6 +165,10 @@ public class PlayerCharge : MonoBehaviour
         sprite.SetActive(false);
     }
 
+    /// <summary>
+    /// Checking if a duc has died
+    /// returns a fails condition screen
+    /// </summary>
     private void IsDead()
     {
         if (duck_1 == null || duck_2 == null)
