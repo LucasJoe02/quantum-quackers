@@ -1,25 +1,13 @@
 fileFormatVersion: 2
-guid: 8c95459d2a8426644b677aff1c594672
+guid: 3dbf965e86003db4187720e020113c0b
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: 4904209785577346459
-    second: Duck2 walk_0
+      213: 42398110481277536
+    second: grape sprite 1_0
   - first:
-      213: 5318737856418530147
-    second: Duck2 walk_1
-  - first:
-      213: -4323395753879449906
-    second: Duck2 walk_2
-  - first:
-      213: -4794600593367459590
-    second: Duck2 walk_3
-  - first:
-      213: 2717484256958617172
-    second: Duck2 walk_4
-  - first:
-      213: 5667363648639592911
-    second: Duck2 walk_5
+      213: -6549349101518087196
+    second: grape sprite 1_1
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -129,49 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Duck2 walk_0
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 640
-        width: 320
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: b95155df0d04f0440800000000000000
-      internalID: 4904209785577346459
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Duck2 walk_1
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 640
-        width: 320
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 363cf3986e3ffc940800000000000000
-      internalID: 5318737856418530147
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Duck2 walk_2
+      name: grape sprite 1_0
       rect:
         serializedVersion: 2
         x: 0
@@ -185,35 +131,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ece459ad7763004c0800000000000000
-      internalID: -4323395753879449906
+      spriteID: 062626a5bd0a69000800000000000000
+      internalID: 42398110481277536
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Duck2 walk_3
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 320
-        width: 320
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: af89478c928267db0800000000000000
-      internalID: -4794600593367459590
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Duck2 walk_4
+      name: grape sprite 1_1
       rect:
         serializedVersion: 2
         x: 0
@@ -227,29 +152,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4561cbaa88176b520800000000000000
-      internalID: 2717484256958617172
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Duck2 walk_5
-      rect:
-        serializedVersion: 2
-        x: 320
-        y: 0
-        width: 320
-        height: 320
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: fc9ef12263586ae40800000000000000
-      internalID: 5667363648639592911
+      spriteID: 4eb9dfd21b90c15a0800000000000000
+      internalID: -6549349101518087196
       vertices: []
       indices: 
       edges: []
