@@ -7,6 +7,7 @@ public class PlayerCharge : MonoBehaviour
 {
     public Collider2D gate1, gate2, gate3;
     public GameObject duck_1, duck_2, test, sprite, canvas;
+    public List<GameObject> grapeUI = new List<GameObject>();
 
     [Range(0, 3)]
     public int chargeLevel;
@@ -32,6 +33,7 @@ public class PlayerCharge : MonoBehaviour
         Switching();
         ChargeReduction();
         UpdateChargeText();
+        UpdateUIGrapes();
     }
 
     public void ChangeGlow(int chargeLevel)
@@ -153,6 +155,36 @@ public class PlayerCharge : MonoBehaviour
     public void UpdateChargeText()
     {
         chargeTextUI.text = chargeLevel.ToString();
+    }
+
+    /// <summary>
+    /// updates the grapes that pop up in the ui panel
+    /// </summary>
+    private void UpdateUIGrapes()
+    {
+        switch (chargeLevel)
+        {
+            case 0:
+                grapeUI[0].SetActive(false);
+                grapeUI[1].SetActive(false);
+                grapeUI[2].SetActive(false);
+                break;
+            case 1:
+                grapeUI[0].SetActive(true);
+                grapeUI[1].SetActive(false);
+                grapeUI[2].SetActive(false);
+                break;
+            case 2:
+                grapeUI[0].SetActive(true);
+                grapeUI[1].SetActive(true);
+                grapeUI[2].SetActive(false);
+                break;
+            default:
+                grapeUI[0].SetActive(true);
+                grapeUI[1].SetActive(true);
+                grapeUI[2].SetActive(true);
+                break;
+        }
     }
 
     /// <summary>
