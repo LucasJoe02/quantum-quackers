@@ -13,4 +13,12 @@ public class Play : MonoBehaviour
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
     }
+
+    /// <summary>
+    /// testing for back button / redo button
+    /// </summary>
+    public void MainMenu()
+    {
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+    }
 }
