@@ -88,18 +88,18 @@ public class PlayerCharge : MonoBehaviour
             Destroy(collision.gameObject);
         }
 
-        /*if (chargeLevel == 1 && collision.gameObject.tag == "Gate")
+        /*if (chargeLevel == 1 && collision.gameObject.tag == "Gate" && this.gameObject)
         {
             gate1.enabled = false;
-        }*/
-        if (chargeLevel == 2 && collision.gameObject.tag == "Gate")
+        }
+        if (chargeLevel == 2 && collision.gameObject.tag == "Gate" && this.gameObject)
         {
             gate2.enabled = false;
         }
-        if (chargeLevel == 3 && collision.gameObject.tag == "Gate")
+        if (chargeLevel == 3 && collision.gameObject.tag == "Gate" && this.gameObject)
         {
             gate3.enabled = false;
-        }
+        }*/
         /// for fail condition
         if (collision.gameObject.tag == "Death")
         {
@@ -169,16 +169,19 @@ public class PlayerCharge : MonoBehaviour
                 grapeUI[1].SetActive(false);
                 grapeUI[2].SetActive(false);
                 break;
+
             case 1:
                 grapeUI[0].SetActive(true);
                 grapeUI[1].SetActive(false);
                 grapeUI[2].SetActive(false);
                 break;
+
             case 2:
                 grapeUI[0].SetActive(true);
                 grapeUI[1].SetActive(true);
                 grapeUI[2].SetActive(false);
                 break;
+
             default:
                 grapeUI[0].SetActive(true);
                 grapeUI[1].SetActive(true);
@@ -206,6 +209,7 @@ public class PlayerCharge : MonoBehaviour
         if (duck_1 == null || duck_2 == null)
         {
             canvas.SetActive(true);
+            Destroy(duck_1);
         }
     }
 }

@@ -8,6 +8,8 @@ TagManager:
   - Gate
   - Death
   - Bread
+  - Duck1
+  - Duck2
   layers:
   - Default
   - TransparentFX

@@ -4,5 +4,11 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/Start Menu.unity
+    guid: 3b96acf47ab5a7b4bb71da5438c1b599
+  - enabled: 1
+    path: Assets/Scenes/Akmal - scene.unity
+    guid: 41b065860a710ef4d808d384e06a047e
   m_configObjects: {}
