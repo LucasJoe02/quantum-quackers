@@ -145,9 +145,9 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 6382171380578354898, guid: 0d52c55619cdb5c459265ea6ef24da24,
+  m_Sprite: {fileID: -9188580430461187357, guid: 57372da9928650c4aa6b23df49aa062f,
     type: 3}
-  m_Color: {r: 0.29803923, g: 0.29803923, b: 0.29803923, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -238,12 +238,15 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b94681b7f8518a2498275a94c8e86464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  tilemapCollider: {fileID: 0}
+  gate1: {fileID: 0}
+  gate2: {fileID: 0}
+  gate3: {fileID: 0}
   duck_1: {fileID: 0}
   duck_2: {fileID: 0}
   test: {fileID: 0}
   sprite: {fileID: 0}
-  isActive: 0
+  canvas: {fileID: 0}
+  grapeUI: []
   chargeLevel: 0
   chargeTextUI: {fileID: 0}
   intensity: -2.84
