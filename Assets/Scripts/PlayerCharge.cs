@@ -35,7 +35,7 @@ public class PlayerCharge : MonoBehaviour
         IsDead();
         ChangeGlow(chargeLevel);
         Switching();
-        ChargeReduction();
+        //ChargeReduction();
         UpdateChargeText();
         UpdateUIGrapes();
     }
@@ -115,13 +115,14 @@ public class PlayerCharge : MonoBehaviour
     /// Reduce the charge everytime a switch occurs
     /// Sets the collider to active within the scene
     /// </summary>
-    private void ChargeReduction()
+   /* private void ChargeReduction()
     {
         if (Input.GetKeyDown("space") && chargeLevel > 0)
         {
+            Debug.Log("Reducing");
             chargeLevel--;
         }
-    }
+    }*/
 
     /// <summary>
     /// Switch the position of the ducks
@@ -133,8 +134,6 @@ public class PlayerCharge : MonoBehaviour
 
         if (Input.GetKeyDown("space") && (chargeLevel > 0 || chargeLevel2.chargeLevel > 0))
         {
-            Debug.Log(chargeLevel);
-            Debug.Log(chargeLevel2.chargeLevel);
             sprite.SetActive(true);
             test.transform.position = duck_1.transform.position;
             duck_1.transform.position = duck_2.transform.position;
@@ -193,6 +192,10 @@ public class PlayerCharge : MonoBehaviour
     {
         yield return new WaitForSeconds(0.1f);
         sprite.SetActive(false);
+        if (chargeLevel > 0)
+        {
+            chargeLevel--;
+        }
     }
 
     /// <summary>
