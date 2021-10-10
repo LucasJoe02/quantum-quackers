@@ -21,7 +21,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 260afac6677ddd04dba6b0807a25ad5a, type: 2}
+  m_Motion: {fileID: 7400000, guid: a835d29956219ec4197f165256cd9174, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -111,7 +111,7 @@ AnimatorController:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: Duck
+  m_Name: Duck2
   serializedVersion: 5
   m_AnimatorParameters:
   - m_Name: Speed
@@ -189,7 +189,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: efafcfeb54fa9f94984cf524dad38b4f, type: 2}
+  m_Motion: {fileID: 7400000, guid: 2c6a4122b3e54b94f9e37051af23380a, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -240,7 +240,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: 572e9e38de6e0164db5d72d5b1cc68e8, type: 2}
+  m_Motion: {fileID: 7400000, guid: 779653e6e9530bb42bea356211443fd0, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
@@ -267,7 +267,7 @@ AnimatorState:
   m_MirrorParameterActive: 0
   m_CycleOffsetParameterActive: 0
   m_TimeParameterActive: 0
-  m_Motion: {fileID: 7400000, guid: b99f7979ba91743409c3b6f3756b128a, type: 2}
+  m_Motion: {fileID: 7400000, guid: 8f8ca4918fffccd4cb8cc3a5f3782abf, type: 2}
   m_Tag: 
   m_SpeedParameter: 
   m_MirrorParameter: 
