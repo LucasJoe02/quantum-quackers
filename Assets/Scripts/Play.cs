@@ -11,7 +11,7 @@ public class Play : MonoBehaviour
     /// </summary>
     public void PlayGame()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex + 1);
+        SceneManager.LoadScene("Akmal - Scene");
     }
 
     /// <summary>
@@ -19,6 +19,15 @@ public class Play : MonoBehaviour
     /// </summary>
     public void MainMenu()
     {
-        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex - 1);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().name);
+    }
+
+    /// <summary>
+    /// Loads the next scene in the queue
+    /// scene queue can be found in File --> Build Settings
+    /// </summary>
+    public void NextScene()
+    {
+        SceneManager.LoadScene("Hamish - Scene");
     }
 }
