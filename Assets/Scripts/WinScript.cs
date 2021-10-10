@@ -14,7 +14,7 @@ public class WinScript : MonoBehaviour
 
     private void HasWon()
     {
-        if (bread_1 == null || bread_2 == null)
+        if (bread_1 == null && bread_2 == null)
         {
             winPanel.SetActive(true);
         }
