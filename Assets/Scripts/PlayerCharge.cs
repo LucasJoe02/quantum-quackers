@@ -42,28 +42,28 @@ public class PlayerCharge : MonoBehaviour
         Color glowColor;
 
         float factor = Mathf.Pow(2, intensity);
-        Color magenta = new Color(191 * factor, 0 * factor, 97 * factor);
-        Color lime = new Color(40 * factor, 191 * factor, 0 * factor);
-        Color teal = new Color(0 * factor, 44 * factor, 191 * factor);
+        Color pink = new Color(98 * factor, 0 * factor, 191 * factor);
+        Color orange = new Color(191 * factor, 5 * factor, 0 * factor);
+        Color blue = new Color(0 * factor, 44 * factor, 191 * factor);
 
         if (chargeLevel == 1)
         {
-            glowColor = magenta;
+            glowColor = blue;
             border = 0.0066f;
         }
         else if (chargeLevel == 2)
         {
-            glowColor = lime;
+            glowColor = orange;
             border = 0.0099f;
         }
         else if (chargeLevel == 3)
         {
-            glowColor = teal;
+            glowColor = pink;
             border = 0.0142f;
         }
         else
         {
-            glowColor = magenta;
+            glowColor = blue;
             border = 0f;
         }
         material.SetFloat("_Thickness", border);
