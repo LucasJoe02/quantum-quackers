@@ -85,7 +85,7 @@ Rigidbody2D:
   m_LinearDrag: 0
   m_AngularDrag: 0.05
   m_GravityScale: 1
-  m_Material: {fileID: 0}
+  m_Material: {fileID: 6200000, guid: 8336ff953ba551b48a32bf3039987f7b, type: 2}
   m_Interpolate: 0
   m_SleepingMode: 1
   m_CollisionDetection: 1
@@ -238,9 +238,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b94681b7f8518a2498275a94c8e86464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gate1: {fileID: 0}
-  gate2: {fileID: 0}
-  gate3: {fileID: 0}
   duck_1: {fileID: 0}
   duck_2: {fileID: 0}
   test: {fileID: 0}
@@ -248,6 +245,7 @@ MonoBehaviour:
   canvas: {fileID: 0}
   grapeUI: []
   chargeLevel: 0
+  chargeLevel2: {fileID: 0}
   chargeTextUI: {fileID: 0}
   intensity: -2.84
 --- !u!114 &1707333929
