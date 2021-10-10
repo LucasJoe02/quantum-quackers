@@ -5,12 +5,15 @@ using TMPro;
 
 public class PlayerCharge : MonoBehaviour
 {
-    public Collider2D gate1, gate2, gate3;
+    //public Collider2D gate1, gate2, gate3;
     public GameObject duck_1, duck_2, test, sprite, canvas;
+
     public List<GameObject> grapeUI = new List<GameObject>();
 
     [Range(0, 3)]
     public int chargeLevel;
+
+    public PlayerCharge chargeLevel2;
 
     public TextMeshProUGUI chargeTextUI;
 
@@ -23,6 +26,7 @@ public class PlayerCharge : MonoBehaviour
     {
         chargeTextUI.text = "0";
         material = GetComponent<SpriteRenderer>().material;
+        chargeLevel2 = duck_2.GetComponent<PlayerCharge>();
     }
 
     // Update is called once per frame
@@ -113,20 +117,9 @@ public class PlayerCharge : MonoBehaviour
     /// </summary>
     private void ChargeReduction()
     {
-        if (Input.GetKeyDown("space") && chargeLevel == 1)
+        if (Input.GetKeyDown("space") && chargeLevel > 0)
         {
             chargeLevel--;
-            gate1.enabled = true;
-        }
-        if (Input.GetKeyDown("space") && chargeLevel == 2)
-        {
-            chargeLevel--;
-            gate2.enabled = true;
-        }
-        if (Input.GetKeyDown("space") && chargeLevel == 3)
-        {
-            chargeLevel--;
-            gate3.enabled = true;
         }
     }
 
@@ -138,8 +131,10 @@ public class PlayerCharge : MonoBehaviour
     {
         // Position Switch of the ducks
 
-        if (Input.GetKeyDown("space") && chargeLevel > 0)
+        if (Input.GetKeyDown("space") && (chargeLevel > 0 || chargeLevel2.chargeLevel > 0))
         {
+            Debug.Log(chargeLevel);
+            Debug.Log(chargeLevel2.chargeLevel);
             sprite.SetActive(true);
             test.transform.position = duck_1.transform.position;
             duck_1.transform.position = duck_2.transform.position;
