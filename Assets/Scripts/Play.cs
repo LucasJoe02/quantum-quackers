@@ -17,7 +17,7 @@ public class Play : MonoBehaviour
     /// <summary>
     /// testing for back button / redo button
     /// </summary>
-    public void MainMenu()
+    public void Restart()
     {
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
     }
@@ -26,7 +26,25 @@ public class Play : MonoBehaviour
     /// Loads the next scene in the queue
     /// scene queue can be found in File --> Build Settings
     /// </summary>
-    public void NextScene()
+    public void LoadLevel1()
+    {
+        SceneManager.LoadScene("Akmal - Scene");
+    }
+
+    /// <summary>
+    /// Loads the next scene in the queue
+    /// scene queue can be found in File --> Build Settings
+    /// </summary>
+    public void LoadLevel2()
+    {
+        SceneManager.LoadScene("Hamish - Scene");
+    }
+
+    /// <summary>
+    /// Loads the next scene in the queue
+    /// scene queue can be found in File --> Build Settings
+    /// </summary>
+    public void LoadLevel3()
     {
         SceneManager.LoadScene("Hamish - Scene");
     }
