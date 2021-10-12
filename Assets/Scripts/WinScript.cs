@@ -7,14 +7,15 @@ public class WinScript : MonoBehaviour
     public GameObject bread_1, bread_2, winPanel;
 
     // Update is called once per frame
-    void Update()
+    private void Update()
     {
         HasWon();
     }
 
+    // adjusted so that both bread need to be taken
     private void HasWon()
     {
-        if (bread_1 == null || bread_2 == null)
+        if (bread_1 == null && bread_2 == null)
         {
             winPanel.SetActive(true);
         }

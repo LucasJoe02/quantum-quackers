@@ -6,7 +6,6 @@ public class PlayerMovement : MonoBehaviour
 {
     public CharacterController2D Controller;
     public Animator animator;
-    private Switch switching;
 
     public float moveSpeed = 40f;
 

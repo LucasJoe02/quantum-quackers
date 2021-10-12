@@ -10,6 +10,7 @@ TagManager:
   - Bread
   - Duck1
   - Duck2
+  - Platform
   layers:
   - Default
   - TransparentFX

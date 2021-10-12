@@ -35,7 +35,6 @@ public class PlayerCharge : MonoBehaviour
         IsDead();
         ChangeGlow(chargeLevel);
         Switching();
-        //ChargeReduction();
         UpdateChargeText();
         UpdateUIGrapes();
     }
@@ -86,43 +85,26 @@ public class PlayerCharge : MonoBehaviour
             /// for win condition
             Destroy(collision.gameObject);
         }
-        if (collision.gameObject.tag == "grape")
+        // Max grape collection = 4
+        // 4 grapes = Kaboom
+        if (collision.gameObject.tag == "grape" && chargeLevel <= 3)
         {
             chargeLevel++;
             Destroy(collision.gameObject);
         }
 
-        /*if (chargeLevel == 1 && collision.gameObject.tag == "Gate" && this.gameObject)
-        {
-            gate1.enabled = false;
-        }
-        if (chargeLevel == 2 && collision.gameObject.tag == "Gate" && this.gameObject)
-        {
-            gate2.enabled = false;
-        }
-        if (chargeLevel == 3 && collision.gameObject.tag == "Gate" && this.gameObject)
-        {
-            gate3.enabled = false;
-        }*/
         /// for fail condition
         if (collision.gameObject.tag == "Death")
         {
-            Destroy(gameObject);
+            Destroy(duck_1);
+            Destroy(duck_2);
+        }
+
+        if (collision.gameObject.tag == "Platform")
+        {
+            chargeLevel = 0;
         }
     }
-
-    /// <summary>
-    /// Reduce the charge everytime a switch occurs
-    /// Sets the collider to active within the scene
-    /// </summary>
-   /* private void ChargeReduction()
-    {
-        if (Input.GetKeyDown("space") && chargeLevel > 0)
-        {
-            Debug.Log("Reducing");
-            chargeLevel--;
-        }
-    }*/
 
     /// <summary>
     /// Switch the position of the ducks
@@ -199,15 +181,16 @@ public class PlayerCharge : MonoBehaviour
     }
 
     /// <summary>
-    /// Checking if a duc has died
+    /// Checking if a duck has died
     /// returns a fails condition screen
     /// </summary>
     private void IsDead()
     {
-        if (duck_1 == null || duck_2 == null)
+        if (duck_1 == null || duck_2 == null || chargeLevel == 4)
         {
             canvas.SetActive(true);
             Destroy(duck_1);
+            Destroy(duck_2);
         }
     }
 }
