@@ -6,7 +6,7 @@ using TMPro;
 public class PlayerCharge : MonoBehaviour
 {
     //public Collider2D gate1, gate2, gate3;
-    public GameObject duck_1, duck_2, test, sprite, canvas;
+    public GameObject duck_1, duck_2, test, sprite, canvas, redo;
 
     public List<GameObject> grapeUI = new List<GameObject>();
 
@@ -188,6 +188,7 @@ public class PlayerCharge : MonoBehaviour
     {
         if (duck_1 == null || duck_2 == null || chargeLevel == 4)
         {
+            redo.SetActive(false);
             canvas.SetActive(true);
             Destroy(duck_1);
             Destroy(duck_2);
