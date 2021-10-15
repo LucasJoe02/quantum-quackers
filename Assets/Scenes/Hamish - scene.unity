@@ -11285,6 +11285,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 186840123}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &289623146 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7088195987230018930, guid: 331a02fe4d18e614ba366bce0d9bf0d7,
+    type: 3}
+  m_PrefabInstance: {fileID: 788801969}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &301509817
 GameObject:
   m_ObjectHideFlags: 0
@@ -11851,7 +11863,7 @@ PrefabInstance:
     - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
       propertyPath: canvas
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1711406018}
     - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
       propertyPath: duck_1
       value: 
@@ -11869,9 +11881,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
+      propertyPath: chargeLevel2
+      value: 
+      objectReference: {fileID: 480691457}
+    - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
       propertyPath: chargeTextUI
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 289623146}
     - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
       propertyPath: tilemapCollider
       value: 
@@ -11915,7 +11931,7 @@ PrefabInstance:
     - target: {fileID: 3854931933311170441, guid: 37a580a2699dd5940bdf76469351a543,
         type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 3854931933311170441, guid: 37a580a2699dd5940bdf76469351a543,
         type: 3}
@@ -13034,7 +13050,7 @@ PrefabInstance:
     - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
       propertyPath: canvas
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1711406018}
     - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
       propertyPath: duck_1
       value: 
@@ -13052,9 +13068,13 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
+      propertyPath: chargeLevel2
+      value: 
+      objectReference: {fileID: 1022302936}
+    - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
       propertyPath: chargeTextUI
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 1390115368}
     - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
       propertyPath: tilemapCollider
       value: 
@@ -13188,6 +13208,18 @@ GameObject:
     type: 3}
   m_PrefabInstance: {fileID: 1022302932}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1022302936 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543,
+    type: 3}
+  m_PrefabInstance: {fileID: 1022302932}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1022302934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b94681b7f8518a2498275a94c8e86464, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1063901892
 GameObject:
   m_ObjectHideFlags: 0
@@ -57880,6 +57912,18 @@ Transform:
     type: 3}
   m_PrefabInstance: {fileID: 1475737670}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &1390115368 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7088195988831110230, guid: 331a02fe4d18e614ba366bce0d9bf0d7,
+    type: 3}
+  m_PrefabInstance: {fileID: 788801969}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1475737670
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -58890,7 +58934,7 @@ PrefabInstance:
     - target: {fileID: 1377333250551940387, guid: d8d10c73cd3c3a74eae40fef03ff6274,
         type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 1377333250551940387, guid: d8d10c73cd3c3a74eae40fef03ff6274,
         type: 3}
@@ -58986,6 +59030,12 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.75, y: 0.875}
   m_EdgeRadius: 0
+--- !u!1 &1711406018 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7088195988087179712, guid: 331a02fe4d18e614ba366bce0d9bf0d7,
+    type: 3}
+  m_PrefabInstance: {fileID: 788801969}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1740485717
 GameObject:
   m_ObjectHideFlags: 0
