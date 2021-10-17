@@ -128,12 +128,12 @@ PrefabInstance:
     - target: {fileID: 3854931933311170441, guid: 37a580a2699dd5940bdf76469351a543,
         type: 3}
       propertyPath: m_LocalPosition.x
-      value: -9.5
+      value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 3854931933311170441, guid: 37a580a2699dd5940bdf76469351a543,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.9
+      value: -1.2010002
       objectReference: {fileID: 0}
     - target: {fileID: 3854931933311170441, guid: 37a580a2699dd5940bdf76469351a543,
         type: 3}
@@ -178,7 +178,7 @@ PrefabInstance:
     - target: {fileID: 3854931933311170443, guid: 37a580a2699dd5940bdf76469351a543,
         type: 3}
       propertyPath: m_Name
-      value: Geoff Variant
+      value: Geoff
       objectReference: {fileID: 0}
     - target: {fileID: 3854931933311170443, guid: 37a580a2699dd5940bdf76469351a543,
         type: 3}
