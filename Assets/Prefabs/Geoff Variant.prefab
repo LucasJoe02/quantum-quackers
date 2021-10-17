@@ -95,10 +95,6 @@ PrefabInstance:
       propertyPath: grapeUI.Array.data[2]
       value: 
       objectReference: {fileID: 0}
-    - target: {fileID: 1355085943, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
-      propertyPath: m_Controller
-      value: 
-      objectReference: {fileID: 9100000, guid: a5db42d63ed91ec489683fb710033082, type: 2}
     - target: {fileID: 3854931933311170440, guid: 37a580a2699dd5940bdf76469351a543,
         type: 3}
       propertyPath: m_Sprite
@@ -185,11 +181,6 @@ PrefabInstance:
       propertyPath: m_TagString
       value: Duck2
       objectReference: {fileID: 0}
-    - target: {fileID: 3854931933311170450, guid: 37a580a2699dd5940bdf76469351a543,
-        type: 3}
-      propertyPath: moveSpeed
-      value: 30
-      objectReference: {fileID: 0}
     - target: {fileID: 3854931933311170452, guid: 37a580a2699dd5940bdf76469351a543,
         type: 3}
       propertyPath: m_Material
@@ -198,7 +189,7 @@ PrefabInstance:
     - target: {fileID: 3854931933311170452, guid: 37a580a2699dd5940bdf76469351a543,
         type: 3}
       propertyPath: m_CollisionDetection
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3854931933311170453, guid: 37a580a2699dd5940bdf76469351a543,
         type: 3}
