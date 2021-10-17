@@ -167,7 +167,7 @@ Animator:
   m_GameObject: {fileID: 3854931933311170443}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 9100000, guid: a5db42d63ed91ec489683fb710033082, type: 2}
+  m_Controller: {fileID: 9100000, guid: 77bbdc015a06eaa43832be82eb149883, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -243,6 +243,7 @@ MonoBehaviour:
   test: {fileID: 0}
   sprite: {fileID: 0}
   canvas: {fileID: 0}
+  redo: {fileID: 0}
   grapeUI: []
   chargeLevel: 0
   chargeLevel2: {fileID: 0}
