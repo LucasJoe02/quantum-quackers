@@ -49,7 +49,7 @@ GameObject:
   - component: {fileID: 1707333929}
   m_Layer: 8
   m_Name: Duck
-  m_TagString: Untagged
+  m_TagString: Duck1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -190,7 +190,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   Controller: {fileID: 3854931933311170453}
   animator: {fileID: 1355085943}
-  moveSpeed: 20
+  moveSpeed: 50
 --- !u!114 &3854931933311170453
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -204,8 +204,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   moneyTextUi: {fileID: 0}
-  m_JumpForce: 200
-  m_AirSpeed: 0.451
+  m_JumpForce: 300
+  m_AirSpeed: 0.6
   m_MovementSmoothing: 0.05
   m_AirControl: 1
   m_WhatIsGround:
@@ -238,13 +238,16 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b94681b7f8518a2498275a94c8e86464, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duck_1: {fileID: 0}
+  duck_1: {fileID: 3854931933311170443}
   duck_2: {fileID: 0}
   test: {fileID: 0}
   sprite: {fileID: 0}
   canvas: {fileID: 0}
   redo: {fileID: 0}
-  grapeUI: []
+  grapeUI:
+  - {fileID: 0}
+  - {fileID: 0}
+  - {fileID: 0}
   chargeLevel: 0
   chargeLevel2: {fileID: 0}
   chargeTextUI: {fileID: 0}
