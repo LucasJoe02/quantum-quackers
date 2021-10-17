@@ -98,7 +98,7 @@ LightmapSettings:
     m_TrainingDataDestination: TrainingData
     m_LightProbeSampleCountMultiplier: 4
   m_LightingDataAsset: {fileID: 0}
-  m_UseShadowmask: 0
+  m_UseShadowmask: 1
 --- !u!196 &4
 NavMeshSettings:
   serializedVersion: 2
@@ -121,6 +121,12 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &32068557 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7088195988234758954, guid: 331a02fe4d18e614ba366bce0d9bf0d7,
+    type: 3}
+  m_PrefabInstance: {fileID: 788801969}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &77427697
 GameObject:
   m_ObjectHideFlags: 0
@@ -11901,7 +11907,7 @@ PrefabInstance:
     - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
       propertyPath: redo
       value: 
-      objectReference: {fileID: 321424454}
+      objectReference: {fileID: 32068557}
     - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
       propertyPath: test
       value: 
@@ -11925,7 +11931,7 @@ PrefabInstance:
     - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
       propertyPath: canvas
       value: 
-      objectReference: {fileID: 1711406018}
+      objectReference: {fileID: 321424454}
     - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
       propertyPath: duck_1
       value: 
@@ -12797,6 +12803,11 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7088195988539581317, guid: 331a02fe4d18e614ba366bce0d9bf0d7,
+        type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 331a02fe4d18e614ba366bce0d9bf0d7, type: 3}
 --- !u!1 &920868680
@@ -12828,8 +12839,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: cd6ec4d2dde41e54fa0e09e5ca2132ae, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  duck1: {fileID: 0}
-  duck2: {fileID: 0}
+  duck1: {fileID: 1022302934}
+  duck2: {fileID: 480691458}
   cam1: {fileID: 1507481205}
   cam2: {fileID: 1604875139}
   cam3: {fileID: 1595549842}
@@ -13106,6 +13117,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
+      propertyPath: redo
+      value: 
+      objectReference: {fileID: 32068557}
+    - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
       propertyPath: test
       value: 
       objectReference: {fileID: 1747674914}
@@ -13128,7 +13143,7 @@ PrefabInstance:
     - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
       propertyPath: canvas
       value: 
-      objectReference: {fileID: 1711406018}
+      objectReference: {fileID: 321424454}
     - target: {fileID: 969130752, guid: 37a580a2699dd5940bdf76469351a543, type: 3}
       propertyPath: duck_1
       value: 
@@ -59140,12 +59155,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 0.75, y: 0.875}
   m_EdgeRadius: 0
---- !u!1 &1711406018 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 7088195988087179712, guid: 331a02fe4d18e614ba366bce0d9bf0d7,
-    type: 3}
-  m_PrefabInstance: {fileID: 788801969}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1740485717
 GameObject:
   m_ObjectHideFlags: 0
