@@ -46,6 +46,6 @@ public class Play : MonoBehaviour
     /// </summary>
     public void LoadLevel3()
     {
-        SceneManager.LoadScene("Hamish - Scene");
+        SceneManager.LoadScene("Hamish level 2");
     }
 }

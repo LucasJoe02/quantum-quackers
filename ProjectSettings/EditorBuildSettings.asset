@@ -14,4 +14,7 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/Hamish - scene.unity
     guid: 4577689698b2039469231332c7ad61a2
+  - enabled: 1
+    path: Assets/Scenes/Hamish level 2.unity
+    guid: 4f5f8511f4e7dfa49843658951604d2e
   m_configObjects: {}

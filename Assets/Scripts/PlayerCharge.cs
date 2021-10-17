@@ -28,6 +28,7 @@ public class PlayerCharge : MonoBehaviour
 
     private void Start()
     {
+        intensity = -0.6f;
         chargeTextUI.text = "0";
         material = GetComponent<SpriteRenderer>().material;
         chargeLevel2 = duck_2.GetComponent<PlayerCharge>();
