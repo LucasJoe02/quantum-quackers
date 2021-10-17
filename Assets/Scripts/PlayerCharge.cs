@@ -6,14 +6,14 @@ using TMPro;
 public class PlayerCharge : MonoBehaviour
 {
     //public Collider2D gate1, gate2, gate3;
-    public GameObject duck_1, duck_2, test, sprite, canvas, redo;
+    public GameObject duck_1, duck_2, test, sprite, canvas, redo, oppositeDuck;
 
     public List<GameObject> grapeUI = new List<GameObject>();
 
     [Range(0, 3)]
     public int chargeLevel;
 
-    public PlayerCharge chargeLevel2;
+    private PlayerCharge chargeLevel2, properDuck2;
 
     public TextMeshProUGUI chargeTextUI;
 
@@ -22,11 +22,17 @@ public class PlayerCharge : MonoBehaviour
     [Range(-10, 10)]
     public float intensity;
 
+    public Animator anim;
+
+    private bool isDying, isDuck2Dying;
+
     private void Start()
     {
         chargeTextUI.text = "0";
         material = GetComponent<SpriteRenderer>().material;
         chargeLevel2 = duck_2.GetComponent<PlayerCharge>();
+        isDying = false;
+        properDuck2 = oppositeDuck.GetComponent<PlayerCharge>();
     }
 
     // Update is called once per frame
@@ -37,6 +43,7 @@ public class PlayerCharge : MonoBehaviour
         Switching();
         UpdateChargeText();
         UpdateUIGrapes();
+        isDuck2Dying = properDuck2.isDying;
     }
 
     public void ChangeGlow(int chargeLevel)
@@ -180,18 +187,39 @@ public class PlayerCharge : MonoBehaviour
         }
     }
 
+    private IEnumerator DeathWait()
+    {
+        anim.SetBool("IsDead", true);
+        yield return new WaitForSeconds(1f);
+        redo.SetActive(false);
+        canvas.SetActive(true);
+        Destroy(duck_1);
+        Destroy(duck_2);
+    }
+
+    private void deathAnim()
+    {
+        StartCoroutine(DeathWait());
+    }
+
     /// <summary>
     /// Checking if a duck has died
     /// returns a fails condition screen
     /// </summary>
     private void IsDead()
     {
-        if (duck_1 == null || duck_2 == null || chargeLevel == 4)
+        if (duck_1 == null || duck_2 == null)
         {
+            
             redo.SetActive(false);
             canvas.SetActive(true);
             Destroy(duck_1);
             Destroy(duck_2);
+        }
+        else if (chargeLevel == 4 || isDuck2Dying)
+        {
+            isDying = true;
+            deathAnim();
         }
     }
 }
