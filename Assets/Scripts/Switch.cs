@@ -8,6 +8,8 @@ public class Switch : MonoBehaviour
     public CharacterController2D move;
     public int count;
 
+
+
     // Start is called before the first frame update
     private void Start()
     {

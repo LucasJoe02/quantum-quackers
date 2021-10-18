@@ -11,6 +11,8 @@ TagManager:
   - Duck1
   - Duck2
   - Platform
+  - Music
+  - SFX
   layers:
   - Default
   - TransparentFX
