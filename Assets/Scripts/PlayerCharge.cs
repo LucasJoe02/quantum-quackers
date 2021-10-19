@@ -5,6 +5,8 @@ using TMPro;
 
 public class PlayerCharge : MonoBehaviour
 {
+    public sfx sfx_manager;
+
     //public Collider2D gate1, gate2, gate3;
     public GameObject duck_1, duck_2, test, sprite, canvas, redo, oppositeDuck;
 
@@ -185,6 +187,7 @@ public class PlayerCharge : MonoBehaviour
         if (chargeLevel > 0)
         {
             chargeLevel--;
+            sfx_manager.sfx_Switch();
         }
     }
 

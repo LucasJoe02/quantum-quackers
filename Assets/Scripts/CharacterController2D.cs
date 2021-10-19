@@ -5,6 +5,8 @@ using TMPro;
 
 public class CharacterController2D : MonoBehaviour
 {
+    public sfx sfx_manager;
+
     public TextMeshProUGUI moneyTextUi;
 
     //private IEnumerator delay;
@@ -93,6 +95,8 @@ public class CharacterController2D : MonoBehaviour
             v.y = 0f;
             m_Rigidbody2D.velocity = v;
             m_Rigidbody2D.AddForce(new Vector2(0f, m_JumpForce));
+
+            sfx_manager.sfx_Jump();
         }
     }
 
