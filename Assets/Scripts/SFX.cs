@@ -10,13 +10,18 @@ public class sfx : MonoBehaviour
     [Header("SFX Clips")]
     public AudioClip Quack;
     public AudioClip Switch;
-    public AudioClip Phase;
     public AudioClip Jump;
     public AudioClip Bread;
     public AudioClip Grape;
     public AudioClip Death;
+    public AudioClip Click;
 
     private string death;
+
+    private void Awake()
+    {
+        sfx_Click();
+    }
 
     public void sfx_Quack()
     {
@@ -28,22 +33,24 @@ public class sfx : MonoBehaviour
         Audio.PlayOneShot(Bread, 0.6f);
     }
 
+    public void sfx_Click()
+    {
+        Audio.PlayOneShot(Click, 1f);
+    }
+
     public void sfx_Switch()
     {
-        Audio.PlayOneShot(Switch, 0.1f);
+        Audio.PlayOneShot(Switch, 0.15f);
     }
 
     public void sfx_Jump()
     {
         Audio.PlayOneShot(Jump, 0.1f);
     }
-    public void sfx_Phase()
-    {
-        Audio.PlayOneShot(Phase);
-    }
+
     public void sfx_Grape()
     {
-        Audio.PlayOneShot(Grape, 0.1f);
+        Audio.PlayOneShot(Grape, 0.15f);
     }
 
     public void sfx_Death_Grape()
