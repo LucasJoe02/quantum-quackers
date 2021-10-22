@@ -98,6 +98,10 @@ public class CharacterController2D : MonoBehaviour
 
             sfx_manager.sfx_Jump();
         }
+        if (m_Grounded && move != 0)
+        {
+            sfx_manager.sfx_Walking();
+        }
     }
 
     private void Flip()

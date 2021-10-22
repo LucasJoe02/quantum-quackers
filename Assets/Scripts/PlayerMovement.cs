@@ -4,8 +4,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    public sfx sfx_manager;
-
     public CharacterController2D Controller;
     public Animator animator;
 
@@ -31,8 +29,6 @@ public class PlayerMovement : MonoBehaviour
     public void OnLanding()
     {
         animator.SetBool("IsJumping", false);
-
-        sfx_manager.sfx_Landing();
     }
 
     private void FixedUpdate()

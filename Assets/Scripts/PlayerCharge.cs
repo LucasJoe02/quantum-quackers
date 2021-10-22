@@ -94,6 +94,8 @@ public class PlayerCharge : MonoBehaviour
         {
             /// for win condition
             Destroy(collision.gameObject);
+
+            sfx_manager.sfx_Bread();
         }
         // Max grape collection = 4
         // 4 grapes = Kaboom
@@ -101,6 +103,13 @@ public class PlayerCharge : MonoBehaviour
         {
             chargeLevel++;
             Destroy(collision.gameObject);
+
+            sfx_manager.sfx_Grape();
+        }
+
+        if (collision.gameObject.tag == "grape" && chargeLevel == 4)
+        {
+            sfx_manager.sfx_Death_Grape();
         }
 
         /// for fail condition
@@ -108,6 +117,8 @@ public class PlayerCharge : MonoBehaviour
         {
             Destroy(duck_1);
             Destroy(duck_2);
+
+            sfx_manager.sfx_Death_Barrier();
         }
 
         if (collision.gameObject.tag == "Platform")
