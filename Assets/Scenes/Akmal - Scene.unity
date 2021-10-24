@@ -135,7 +135,7 @@ GameObject:
   - component: {fileID: 301550}
   - component: {fileID: 301549}
   - component: {fileID: 301548}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gate 2 Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -8700,9 +8700,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 48759813}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: gate1s
-  m_TagString: Untagged
+  m_TagString: Gate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -9421,7 +9421,7 @@ GameObject:
   - component: {fileID: 186119186}
   - component: {fileID: 186119190}
   - component: {fileID: 186119189}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gate  1 Bot
   m_TagString: Gate
   m_Icon: {fileID: 0}
@@ -10022,7 +10022,7 @@ GameObject:
   - component: {fileID: 222095073}
   - component: {fileID: 222095076}
   - component: {fileID: 222095077}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gate 3 Top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -10292,9 +10292,9 @@ GameObject:
   - component: {fileID: 229390499}
   - component: {fileID: 229390498}
   - component: {fileID: 229390501}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gate Mechanics
-  m_TagString: Untagged
+  m_TagString: Gate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -12596,7 +12596,7 @@ GameObject:
   - component: {fileID: 826797197}
   - component: {fileID: 826797194}
   - component: {fileID: 826797193}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trail Gate Bot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13602,7 +13602,7 @@ GameObject:
   - component: {fileID: 909659805}
   - component: {fileID: 909659804}
   - component: {fileID: 909659803}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Trial Gate top
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15534,7 +15534,7 @@ GameObject:
   - component: {fileID: 1468074991}
   - component: {fileID: 1468074995}
   - component: {fileID: 1468074994}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gate 2 Bot
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -15887,7 +15887,7 @@ GameObject:
   - component: {fileID: 1485458002}
   - component: {fileID: 1485458001}
   - component: {fileID: 1485458000}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gate 1 Top
   m_TagString: Gate
   m_Icon: {fileID: 0}
@@ -16150,9 +16150,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1500778613}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: gate2s
-  m_TagString: Untagged
+  m_TagString: Gate
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -16185,7 +16185,7 @@ GameObject:
   - component: {fileID: 1504054073}
   - component: {fileID: 1504054075}
   - component: {fileID: 1504054076}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: 'Platform '
   m_TagString: Platform
   m_Icon: {fileID: 0}
@@ -16487,7 +16487,7 @@ GameObject:
   - component: {fileID: 1513897066}
   - component: {fileID: 1513897065}
   - component: {fileID: 1513897068}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gates 3
   m_TagString: Gate
   m_Icon: {fileID: 0}
@@ -16827,7 +16827,7 @@ GameObject:
   - component: {fileID: 1567586874}
   - component: {fileID: 1567586877}
   - component: {fileID: 1567586878}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gate 3 Bot
   m_TagString: Untagged
   m_Icon: {fileID: 0}

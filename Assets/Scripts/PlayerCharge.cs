@@ -125,6 +125,9 @@ public class PlayerCharge : MonoBehaviour
         {
             chargeLevel = 0;
         }
+        if (collision.gameObject.tag == "Gate")
+        {
+        }
     }
 
     /// <summary>

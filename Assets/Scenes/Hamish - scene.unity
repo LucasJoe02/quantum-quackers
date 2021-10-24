@@ -10915,7 +10915,7 @@ GameObject:
   - component: {fileID: 161574072}
   - component: {fileID: 161574071}
   - component: {fileID: 161574070}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gates 1
   m_TagString: Gate
   m_Icon: {fileID: 0}
@@ -11711,7 +11711,7 @@ GameObject:
   - component: {fileID: 312269826}
   - component: {fileID: 312269825}
   - component: {fileID: 312269824}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gates 1 (1)
   m_TagString: Gate
   m_Icon: {fileID: 0}
@@ -12509,7 +12509,7 @@ GameObject:
   - component: {fileID: 680769945}
   - component: {fileID: 680769944}
   - component: {fileID: 680769942}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gates 3
   m_TagString: Gate
   m_Icon: {fileID: 0}
@@ -12695,7 +12695,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 696829036}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: gate1s
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13219,7 +13219,7 @@ GameObject:
   - component: {fileID: 943087804}
   - component: {fileID: 943087803}
   - component: {fileID: 943087802}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: gates1 3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -13888,7 +13888,7 @@ GameObject:
   - component: {fileID: 1104031127}
   - component: {fileID: 1104031126}
   - component: {fileID: 1104031125}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gates 2
   m_TagString: Gate
   m_Icon: {fileID: 0}
@@ -60197,7 +60197,7 @@ GameObject:
   - component: {fileID: 1588138863}
   - component: {fileID: 1588138862}
   - component: {fileID: 1588138861}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: Gate Mechanics
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -61238,7 +61238,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1968306957}
-  m_Layer: 0
+  m_Layer: 10
   m_Name: gate2s
   m_TagString: Untagged
   m_Icon: {fileID: 0}
