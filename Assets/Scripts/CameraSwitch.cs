@@ -30,7 +30,7 @@ public class CameraSwitch : MonoBehaviour
 
     public void Camera()
     {
-        if ((charge1.chargeLevel > 0 || charge2.chargeLevel > 0) && Input.GetKeyDown("space"))
+        if ((charge1.chargeLevel > 0 || charge2.chargeLevel > 0) && Input.GetKeyDown("s"))
         {
             if (maybe == true)
             {

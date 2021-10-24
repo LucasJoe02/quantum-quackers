@@ -3,7 +3,16 @@ guid: 185199f2bf4975948b55079d7ebbecab
 MonoImporter:
   externalObjects: {}
   serializedVersion: 2
-  defaultReferences: []
+  defaultReferences:
+  - Audio: {instanceID: 0}
+  - Audio_Walking: {instanceID: 0}
+  - Quack: {instanceID: 0}
+  - Switch: {instanceID: 0}
+  - Jump: {instanceID: 0}
+  - Bread: {fileID: 8300000, guid: 7af5ba6095d7a6543ae2bd91d5148f2d, type: 3}
+  - Grape: {instanceID: 0}
+  - Death: {instanceID: 0}
+  - Click: {instanceID: 0}
   executionOrder: 0
   icon: {instanceID: 0}
   userData: 

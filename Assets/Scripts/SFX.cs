@@ -2,13 +2,14 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class sfx : MonoBehaviour
+public class SFX : MonoBehaviour
 {
     public AudioSource Audio;
     public AudioSource Audio_Walking;
 
     [Header("SFX Clips")]
     public AudioClip Quack;
+
     public AudioClip Switch;
     public AudioClip Jump;
     public AudioClip Bread;
@@ -23,9 +24,17 @@ public class sfx : MonoBehaviour
         sfx_Click();
     }
 
+    private void FixedUpdate()
+    {
+        sfx_Quack();
+    }
+
     public void sfx_Quack()
     {
-        Audio.PlayOneShot(Quack);
+        if (Input.GetKeyDown("q"))
+        {
+            Audio.PlayOneShot(Quack);
+        }
     }
 
     public void sfx_Bread()
@@ -71,5 +80,11 @@ public class sfx : MonoBehaviour
         {
             Audio_Walking.Play();
         }
+    }
+
+    private IEnumerator Example()
+    {
+        yield return new WaitForSeconds(Random.Range(1f, 5f));
+        sfx_Quack();
     }
 }

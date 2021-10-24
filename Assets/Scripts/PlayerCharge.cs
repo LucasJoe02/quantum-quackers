@@ -5,7 +5,7 @@ using TMPro;
 
 public class PlayerCharge : MonoBehaviour
 {
-    public sfx sfx_manager;
+    public SFX sfx_manager;
 
     //public Collider2D gate1, gate2, gate3;
     public GameObject duck_1, duck_2, test, sprite, canvas, redo, oppositeDuck;
@@ -42,11 +42,11 @@ public class PlayerCharge : MonoBehaviour
     private void Update()
     {
         IsDead();
+        isDuck2Dying = properDuck2.isDying;
         ChangeGlow(chargeLevel);
         Switching();
         UpdateChargeText();
         UpdateUIGrapes();
-        isDuck2Dying = properDuck2.isDying;
     }
 
     public void ChangeGlow(int chargeLevel)
@@ -135,7 +135,7 @@ public class PlayerCharge : MonoBehaviour
     {
         // Position Switch of the ducks
 
-        if (Input.GetKeyDown("space") && (chargeLevel > 0 || chargeLevel2.chargeLevel > 0))
+        if (Input.GetKeyDown("s") && (chargeLevel > 0 || chargeLevel2.chargeLevel > 0))
         {
             sprite.SetActive(true);
             test.transform.position = duck_1.transform.position;
@@ -225,11 +225,11 @@ public class PlayerCharge : MonoBehaviour
     {
         if (duck_1 == null || duck_2 == null)
         {
-            
             redo.SetActive(false);
             canvas.SetActive(true);
             Destroy(duck_1);
             Destroy(duck_2);
+            deathAnim();
         }
         else if (chargeLevel == 4 || isDuck2Dying)
         {

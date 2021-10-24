@@ -19,7 +19,7 @@ public class PlayerMovement : MonoBehaviour
 
         animator.SetFloat("Speed", Mathf.Abs(horizontalMove));
 
-        if (Input.GetButtonDown("Jump"))
+        if (Input.GetKeyDown("space"))
         {
             animator.SetBool("IsJumping", true);
             jump = true;

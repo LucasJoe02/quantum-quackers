@@ -5,7 +5,7 @@ using TMPro;
 
 public class CharacterController2D : MonoBehaviour
 {
-    public sfx sfx_manager;
+    public SFX sfx_manager;
 
     public TextMeshProUGUI moneyTextUi;
 
